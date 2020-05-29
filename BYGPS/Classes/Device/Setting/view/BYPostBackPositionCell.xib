@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BYPostBackPositionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pve-b8-KJu">
+                        <rect key="frame" x="13" y="11" width="44" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="请输入固定回传时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrB-De-Twl">
+                        <rect key="frame" x="139" y="11.5" width="153" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_icon_right" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-aO-tdu">
+                        <rect key="frame" x="295" y="14" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="81n-R5-OEN"/>
+                            <constraint firstAttribute="width" constant="15" id="Bnh-nu-9cG"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HX5-r7-NY6">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="IVD-zt-GEh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pve-b8-KJu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="6Yc-t3-ez2"/>
+                    <constraint firstItem="pve-b8-KJu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="INg-12-SzS"/>
+                    <constraint firstAttribute="trailing" secondItem="jYm-aO-tdu" secondAttribute="trailing" constant="10" id="RQZ-XT-6ji"/>
+                    <constraint firstAttribute="bottom" secondItem="HX5-r7-NY6" secondAttribute="bottom" id="fJM-A2-ywq"/>
+                    <constraint firstItem="NrB-De-Twl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nFi-fI-lwK"/>
+                    <constraint firstAttribute="trailing" secondItem="HX5-r7-NY6" secondAttribute="trailing" id="oey-vz-Dt2"/>
+                    <constraint firstItem="jYm-aO-tdu" firstAttribute="leading" secondItem="NrB-De-Twl" secondAttribute="trailing" constant="3" id="pfX-lc-qPH"/>
+                    <constraint firstItem="HX5-r7-NY6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qt8-Mg-XwE"/>
+                    <constraint firstItem="jYm-aO-tdu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="z8s-um-5hc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="subTitleLabel" destination="NrB-De-Twl" id="0Un-jj-a09"/>
+                <outlet property="titleLabel" destination="pve-b8-KJu" id="j1a-WW-cJh"/>
+            </connections>
+            <point key="canvasLocation" x="225" y="303"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user_icon_right" width="15" height="15"/>
+    </resources>
+</document>

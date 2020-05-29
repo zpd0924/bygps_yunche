@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BYHandleAlarmView">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="387"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6x-YN-3gw" userLabel="背景View">
+                    <rect key="frame" x="10" y="10" width="249" height="236"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="判定结果:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJY-IJ-byt">
+                            <rect key="frame" x="10" y="0.0" width="65.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocN-2e-c5b">
+                            <rect key="frame" x="0.0" y="23" width="249" height="108"/>
+                            <subviews>
+                                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqI-X4-Sdj" customClass="BYConstDistanceButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="27"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="27" id="G3Y-ec-VpX"/>
+                                        <constraint firstAttribute="width" constant="100" id="Q35-eU-xrs"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                                    <state key="normal" title="测试" image="icon_radio_nornal">
+                                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="icon_radio_checked">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="itemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="g00-Uc-3de"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMU-oh-sdc" customClass="BYConstDistanceButton">
+                                    <rect key="frame" x="0.0" y="27" width="100" height="27"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="FGM-ek-6Dm"/>
+                                        <constraint firstAttribute="height" constant="27" id="m35-yK-fl3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                                    <state key="normal" title="误报" image="icon_radio_nornal">
+                                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="icon_radio_checked">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="itemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="bZn-dW-Yrq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UC-cE-Miv" customClass="BYConstDistanceButton">
+                                    <rect key="frame" x="0.0" y="54" width="100" height="27"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="fF3-nm-y57"/>
+                                        <constraint firstAttribute="height" constant="27" id="rSb-r1-UhS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                                    <state key="normal" title="安装事故" image="icon_radio_nornal">
+                                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="icon_radio_checked">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="itemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="tK2-d5-WIi"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZe-lv-ECI" customClass="BYConstDistanceButton">
+                                    <rect key="frame" x="0.0" y="81" width="100" height="27"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="27" id="C12-qM-3HM"/>
+                                        <constraint firstAttribute="width" constant="100" id="nIz-eB-krn"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                                    <state key="normal" title="其他" image="icon_radio_nornal">
+                                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="icon_radio_checked">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="itemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="INF-fO-Q9b"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="9UC-cE-Miv" firstAttribute="leading" secondItem="ocN-2e-c5b" secondAttribute="leading" id="7qC-7u-Bdh"/>
+                                <constraint firstItem="gZe-lv-ECI" firstAttribute="leading" secondItem="ocN-2e-c5b" secondAttribute="leading" id="TiH-ye-d6A"/>
+                                <constraint firstItem="kqI-X4-Sdj" firstAttribute="top" secondItem="ocN-2e-c5b" secondAttribute="top" id="gqW-a2-2uY"/>
+                                <constraint firstItem="PMU-oh-sdc" firstAttribute="top" secondItem="kqI-X4-Sdj" secondAttribute="bottom" id="n8c-3z-hkA"/>
+                                <constraint firstItem="PMU-oh-sdc" firstAttribute="leading" secondItem="ocN-2e-c5b" secondAttribute="leading" id="pEz-NV-LRt"/>
+                                <constraint firstAttribute="height" constant="108" id="sDV-f3-O6J"/>
+                                <constraint firstItem="kqI-X4-Sdj" firstAttribute="leading" secondItem="ocN-2e-c5b" secondAttribute="leading" id="tZV-QI-Agy"/>
+                                <constraint firstItem="9UC-cE-Miv" firstAttribute="top" secondItem="PMU-oh-sdc" secondAttribute="bottom" id="uVf-8Y-lSv"/>
+                                <constraint firstItem="gZe-lv-ECI" firstAttribute="top" secondItem="9UC-cE-Miv" secondAttribute="bottom" id="zJW-ei-REI"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X6C-xb-17w">
+                            <rect key="frame" x="55" y="136" width="166" height="100"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="A7X-RC-fCg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RY-Zc-SHf">
+                            <rect key="frame" x="10" y="136" width="35" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="JJY-IJ-byt" firstAttribute="top" secondItem="o6x-YN-3gw" secondAttribute="top" id="1qT-rB-UsH"/>
+                        <constraint firstItem="6RY-Zc-SHf" firstAttribute="top" secondItem="ocN-2e-c5b" secondAttribute="bottom" constant="5" id="8n6-7a-mwE"/>
+                        <constraint firstItem="JJY-IJ-byt" firstAttribute="leading" secondItem="o6x-YN-3gw" secondAttribute="leading" constant="10" id="As0-bs-9Cb"/>
+                        <constraint firstItem="ocN-2e-c5b" firstAttribute="leading" secondItem="o6x-YN-3gw" secondAttribute="leading" id="SAJ-pF-QmP"/>
+                        <constraint firstAttribute="bottom" secondItem="X6C-xb-17w" secondAttribute="bottom" id="UET-ff-5BZ"/>
+                        <constraint firstItem="X6C-xb-17w" firstAttribute="top" secondItem="6RY-Zc-SHf" secondAttribute="bottom" constant="-18" id="XXl-yn-7h9"/>
+                        <constraint firstItem="X6C-xb-17w" firstAttribute="leading" secondItem="6RY-Zc-SHf" secondAttribute="trailing" constant="10" id="aPO-db-UYY"/>
+                        <constraint firstItem="ocN-2e-c5b" firstAttribute="top" secondItem="JJY-IJ-byt" secondAttribute="bottom" constant="5" id="hTc-Lk-LLG"/>
+                        <constraint firstItem="X6C-xb-17w" firstAttribute="width" secondItem="o6x-YN-3gw" secondAttribute="width" multiplier="2/3" id="i7F-EG-Ue4"/>
+                        <constraint firstAttribute="trailing" secondItem="ocN-2e-c5b" secondAttribute="trailing" id="kbx-Bn-nV7"/>
+                        <constraint firstItem="6RY-Zc-SHf" firstAttribute="leading" secondItem="o6x-YN-3gw" secondAttribute="leading" constant="10" id="tUf-Ti-wo8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="o6x-YN-3gw" secondAttribute="trailing" constant="20" id="60e-C3-z8e"/>
+                <constraint firstItem="o6x-YN-3gw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="CO8-5q-bqC"/>
+                <constraint firstItem="o6x-YN-3gw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Z1W-pW-BwS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textView" destination="X6C-xb-17w" id="SFD-HX-6Bp"/>
+                <outlet property="textViewContraint_H" destination="A7X-RC-fCg" id="keB-hW-TkU"/>
+            </connections>
+            <point key="canvasLocation" x="494" y="185"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_radio_checked" width="17" height="17"/>
+        <image name="icon_radio_nornal" width="17" height="17"/>
+    </resources>
+</document>

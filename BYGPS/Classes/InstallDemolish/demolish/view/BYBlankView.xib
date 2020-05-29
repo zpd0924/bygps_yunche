@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BYBlankView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_order" translatesAutoresizingMaskIntoConstraints="NO" id="MZi-nt-oiM">
+                    <rect key="frame" x="115" y="188.5" width="145" height="130"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有订单哦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBu-qY-OpW">
+                    <rect key="frame" x="116" y="338.5" width="143" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MZi-nt-oiM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1Gs-bU-2VF"/>
+                <constraint firstItem="wBu-qY-OpW" firstAttribute="top" secondItem="MZi-nt-oiM" secondAttribute="bottom" constant="20" id="3in-wI-dsi"/>
+                <constraint firstItem="MZi-nt-oiM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-80" id="Frj-nx-hNq"/>
+                <constraint firstItem="wBu-qY-OpW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aZN-Hr-R4F"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgView" destination="MZi-nt-oiM" id="PM9-r5-Kjq"/>
+                <outlet property="titleLabel" destination="wBu-qY-OpW" id="APi-fw-e51"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="no_order" width="145" height="130"/>
+    </resources>
+</document>

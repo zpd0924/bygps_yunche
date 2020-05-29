@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BYBreakOilContentView">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="134"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iX-es-sYr">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF4-uS-PfV">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ges-Sa-qBK">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.5450980392" green="0.5450980392" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="s9j-z5-DxA">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*发指令前请输入二级账号密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2j-lk-hzc">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.5450980392" green="0.5450980392" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="NF4-uS-PfV" firstAttribute="top" secondItem="2iX-es-sYr" secondAttribute="top" id="19T-LJ-B6X"/>
+                        <constraint firstAttribute="bottom" secondItem="B2j-lk-hzc" secondAttribute="bottom" id="AIT-gE-TZC"/>
+                        <constraint firstItem="s9j-z5-DxA" firstAttribute="leading" secondItem="Ges-Sa-qBK" secondAttribute="trailing" constant="5" id="FpR-hg-lff"/>
+                        <constraint firstItem="B2j-lk-hzc" firstAttribute="top" secondItem="Ges-Sa-qBK" secondAttribute="bottom" constant="20" id="Gsx-OU-ph7"/>
+                        <constraint firstItem="B2j-lk-hzc" firstAttribute="leading" secondItem="2iX-es-sYr" secondAttribute="leading" id="KCP-0v-dg0"/>
+                        <constraint firstItem="NF4-uS-PfV" firstAttribute="leading" secondItem="2iX-es-sYr" secondAttribute="leading" id="SQG-iB-lsF"/>
+                        <constraint firstItem="Ges-Sa-qBK" firstAttribute="top" secondItem="NF4-uS-PfV" secondAttribute="bottom" constant="15" id="V9M-xa-SuN"/>
+                        <constraint firstAttribute="trailing" secondItem="s9j-z5-DxA" secondAttribute="trailing" constant="10" id="X4j-7e-eez"/>
+                        <constraint firstItem="s9j-z5-DxA" firstAttribute="centerY" secondItem="Ges-Sa-qBK" secondAttribute="centerY" id="fYC-0n-CBS"/>
+                        <constraint firstItem="Ges-Sa-qBK" firstAttribute="leading" secondItem="2iX-es-sYr" secondAttribute="leading" id="uny-tB-aIn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2iX-es-sYr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="AUh-2j-kP8"/>
+                <constraint firstAttribute="trailing" secondItem="2iX-es-sYr" secondAttribute="trailing" constant="10" id="vry-H4-lrs"/>
+                <constraint firstItem="2iX-es-sYr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="wqe-lG-SqN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deviceNumLabel" destination="NF4-uS-PfV" id="H0K-3n-lUw"/>
+                <outlet property="textField" destination="s9j-z5-DxA" id="uo4-GV-bHp"/>
+            </connections>
+            <point key="canvasLocation" x="546" y="98"/>
+        </view>
+    </objects>
+</document>

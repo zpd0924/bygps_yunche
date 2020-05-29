@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="284" id="KGk-i7-Jjw" customClass="BYAutoServiceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbU-eT-urI">
+                        <rect key="frame" x="10" y="5" width="386" height="69.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="安装分派" translatesAutoresizingMaskIntoConstraints="NO" id="iNk-6H-arP">
+                                <rect key="frame" x="8" y="22.5" width="25" height="25"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自助安装" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvn-BK-oTd">
+                                <rect key="frame" x="45" y="25.5" width="65.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_autoSearch_rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="dzT-e2-l7p">
+                                <rect key="frame" x="352" y="23" width="24" height="24"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dzT-e2-l7p" secondAttribute="trailing" constant="10" id="4R2-1T-jk1"/>
+                            <constraint firstItem="rvn-BK-oTd" firstAttribute="centerY" secondItem="iNk-6H-arP" secondAttribute="centerY" id="Dw9-uZ-aFv"/>
+                            <constraint firstItem="dzT-e2-l7p" firstAttribute="centerY" secondItem="rvn-BK-oTd" secondAttribute="centerY" id="Q5C-70-ed6"/>
+                            <constraint firstItem="iNk-6H-arP" firstAttribute="leading" secondItem="DbU-eT-urI" secondAttribute="leading" constant="8" id="iU6-33-tjF"/>
+                            <constraint firstItem="iNk-6H-arP" firstAttribute="centerY" secondItem="DbU-eT-urI" secondAttribute="centerY" id="ivr-61-egb"/>
+                            <constraint firstItem="rvn-BK-oTd" firstAttribute="leading" secondItem="iNk-6H-arP" secondAttribute="trailing" constant="12" id="vdU-eH-hgG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DbU-eT-urI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ARR-9w-DnC"/>
+                    <constraint firstAttribute="bottom" secondItem="DbU-eT-urI" secondAttribute="bottom" constant="5" id="Htb-PY-wGu"/>
+                    <constraint firstItem="DbU-eT-urI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Xsn-KQ-zkN"/>
+                    <constraint firstAttribute="trailing" secondItem="DbU-eT-urI" secondAttribute="trailing" constant="10" id="uxd-Kz-T8n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="backView" destination="DbU-eT-urI" id="x6z-KH-cW5"/>
+                <outlet property="headImg" destination="iNk-6H-arP" id="dr9-GT-URW"/>
+                <outlet property="titleLabel" destination="rvn-BK-oTd" id="a6S-t0-Jc6"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_autoSearch_rightArrow" width="24" height="24"/>
+        <image name="安装分派" width="25" height="25"/>
+    </resources>
+</document>

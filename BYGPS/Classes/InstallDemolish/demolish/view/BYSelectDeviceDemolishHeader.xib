@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BYSelectDeviceDemolishHeader">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_car" translatesAutoresizingMaskIntoConstraints="NO" id="veu-S6-U0g"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qC-wA-jB5">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAf-4Y-nBO">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vQC-qj-bem"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1qC-wA-jB5" firstAttribute="centerY" secondItem="veu-S6-U0g" secondAttribute="centerY" id="1IX-ap-c8w"/>
+                <constraint firstItem="zAf-4Y-nBO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9eW-JK-gcR"/>
+                <constraint firstAttribute="trailing" secondItem="zAf-4Y-nBO" secondAttribute="trailing" id="A05-lt-N7y"/>
+                <constraint firstItem="veu-S6-U0g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="SZm-PJ-dcc"/>
+                <constraint firstItem="1qC-wA-jB5" firstAttribute="leading" secondItem="veu-S6-U0g" secondAttribute="trailing" constant="10" id="XtC-Dp-DTf"/>
+                <constraint firstItem="veu-S6-U0g" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bZ6-vR-v7P"/>
+                <constraint firstItem="zAf-4Y-nBO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zvm-fl-Yfk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="1qC-wA-jB5" id="w10-nY-AOp"/>
+            </connections>
+            <point key="canvasLocation" x="106.5" y="-152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pic_car" width="37" height="37"/>
+    </resources>
+</document>

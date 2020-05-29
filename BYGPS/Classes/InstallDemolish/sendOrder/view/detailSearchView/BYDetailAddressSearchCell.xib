@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="BYDetailAddressSearchCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPd-D4-IMg">
+                        <rect key="frame" x="27" y="10" width="281" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.1803921568627451" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfv-S2-8Tn">
+                        <rect key="frame" x="12" y="30.5" width="296" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_home_location" translatesAutoresizingMaskIntoConstraints="NO" id="ebd-eT-biA">
+                        <rect key="frame" x="12" y="13.5" width="10" height="12.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="LjN-JH-LAh"/>
+                            <constraint firstAttribute="width" secondItem="ebd-eT-biA" secondAttribute="height" multiplier="7:9" id="gLv-fA-DRE"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rfv-S2-8Tn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="0ka-2W-z8b"/>
+                    <constraint firstItem="mPd-D4-IMg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GP4-ji-thM"/>
+                    <constraint firstItem="Rfv-S2-8Tn" firstAttribute="top" secondItem="mPd-D4-IMg" secondAttribute="bottom" constant="1" id="Gd9-7v-M9i"/>
+                    <constraint firstItem="mPd-D4-IMg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="27" id="NZD-kG-VbE"/>
+                    <constraint firstAttribute="trailing" secondItem="Rfv-S2-8Tn" secondAttribute="trailing" constant="12" id="O7X-xa-UN3"/>
+                    <constraint firstItem="ebd-eT-biA" firstAttribute="centerY" secondItem="mPd-D4-IMg" secondAttribute="centerY" id="cel-KU-6oU"/>
+                    <constraint firstItem="ebd-eT-biA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="oa7-pO-grJ"/>
+                    <constraint firstItem="mPd-D4-IMg" firstAttribute="leading" secondItem="ebd-eT-biA" secondAttribute="trailing" constant="5" id="poD-5d-hdv"/>
+                    <constraint firstAttribute="trailing" secondItem="mPd-D4-IMg" secondAttribute="trailing" constant="12" id="xqV-jx-xfy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="addressLabel" destination="Rfv-S2-8Tn" id="tpr-1e-ufZ"/>
+                <outlet property="leftconstraintW" destination="NZD-kG-VbE" id="FYN-Ot-cwa"/>
+                <outlet property="locationImgView" destination="ebd-eT-biA" id="CPf-3B-fCB"/>
+                <outlet property="titleLabel" destination="mPd-D4-IMg" id="wtk-HW-OUr"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="40.178571428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_home_location" width="14" height="18"/>
+    </resources>
+</document>
