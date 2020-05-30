@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="BYBreakOilCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdx-ef-rrE">
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="HwU-9T-NJa"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pt-8U-Jf6">
+                        <state key="normal" image="icon_check"/>
+                        <state key="selected" image="icon_check_on"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="断油电" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9u7-nd-sBc">
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vdx-ef-rrE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3GW-JY-hhI"/>
+                    <constraint firstItem="9u7-nd-sBc" firstAttribute="leading" secondItem="3Pt-8U-Jf6" secondAttribute="trailing" constant="10" id="ESz-4w-McI"/>
+                    <constraint firstItem="3Pt-8U-Jf6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="L2p-A5-ek3"/>
+                    <constraint firstAttribute="trailing" secondItem="vdx-ef-rrE" secondAttribute="trailing" id="chE-3H-QhM"/>
+                    <constraint firstAttribute="bottom" secondItem="vdx-ef-rrE" secondAttribute="bottom" id="fXL-na-aV6"/>
+                    <constraint firstItem="9u7-nd-sBc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uOL-Mt-uq7"/>
+                    <constraint firstItem="3Pt-8U-Jf6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wE9-H0-Sge"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectButton" destination="3Pt-8U-Jf6" id="Mx3-wP-OqW"/>
+                <outlet property="titleLabel" destination="9u7-nd-sBc" id="KEh-ZQ-cM1"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_check" width="21" height="21"/>
+        <image name="icon_check_on" width="20" height="20"/>
+    </resources>
+</document>

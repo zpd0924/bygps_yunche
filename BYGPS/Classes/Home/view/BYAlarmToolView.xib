@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.94999999999999996" contentMode="scaleToFill" id="iN0-l3-epB" customClass="BYAlarmToolView">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="69"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gf8-kb-n4b">
+                    <color key="backgroundColor" red="0.011764705882352941" green="0.66274509803921566" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="jWW-wW-B3j"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="处理"/>
+                    <connections>
+                        <action selector="handleAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="vDu-0O-Swe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gf8-kb-n4b" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="2/3" id="VzL-mn-nRP"/>
+                <constraint firstItem="gf8-kb-n4b" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="x6z-32-dti"/>
+                <constraint firstItem="gf8-kb-n4b" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yUm-nr-A5M"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="handleButton" destination="gf8-kb-n4b" id="3va-OY-FnS"/>
+                <outlet property="handleButtonContraint_W" destination="jWW-wW-B3j" id="eJD-g0-wlV"/>
+            </connections>
+            <point key="canvasLocation" x="488" y="220.5"/>
+        </view>
+    </objects>
+</document>

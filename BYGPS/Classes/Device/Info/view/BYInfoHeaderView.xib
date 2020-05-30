@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BYInfoHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="532" height="177"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="set_info_car_header" translatesAutoresizingMaskIntoConstraints="NO" id="M02-Kw-bMn">
+                    <rect key="frame" x="15" y="10" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="4Ts-Ao-0vJ"/>
+                        <constraint firstAttribute="height" constant="44" id="Rbd-cE-pzI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3w-Ob-tXH">
+                    <rect key="frame" x="74" y="35" width="63.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.18431372549019609" green="0.29019607843137252" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所属分组: 后海" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AY-bg-1IM">
+                    <rect key="frame" x="15" y="100" width="100.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27450980392156865" green="0.396078431372549" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备类型: 2345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aV-hl-0VX">
+                    <rect key="frame" x="15" y="64" width="133" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27450980392156865" green="0.396078431372549" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备状态: online" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5X-iA-iGV">
+                    <rect key="frame" x="15" y="82" width="507" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27450980392156865" green="0.396078431372549" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPX-ro-QzJ">
+                    <rect key="frame" x="74" y="15" width="37" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.36470588235294116" green="0.47843137254901957" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="w5X-iA-iGV" firstAttribute="leading" secondItem="9aV-hl-0VX" secondAttribute="leading" id="33j-YL-SPS"/>
+                <constraint firstItem="w5X-iA-iGV" firstAttribute="top" secondItem="9aV-hl-0VX" secondAttribute="bottom" id="Cy7-xv-09k"/>
+                <constraint firstItem="M02-Kw-bMn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Dz7-k6-qxU"/>
+                <constraint firstItem="lPX-ro-QzJ" firstAttribute="top" secondItem="M02-Kw-bMn" secondAttribute="top" constant="5" id="Ho8-CV-Uv4"/>
+                <constraint firstItem="9aV-hl-0VX" firstAttribute="top" secondItem="M02-Kw-bMn" secondAttribute="bottom" constant="10" id="KOg-aP-lt5"/>
+                <constraint firstItem="lPX-ro-QzJ" firstAttribute="leading" secondItem="M02-Kw-bMn" secondAttribute="trailing" constant="15" id="Q6c-ho-R2n"/>
+                <constraint firstItem="M02-Kw-bMn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="TSl-Bb-G9z"/>
+                <constraint firstItem="g3w-Ob-tXH" firstAttribute="leading" secondItem="lPX-ro-QzJ" secondAttribute="leading" id="Thk-da-iuk"/>
+                <constraint firstItem="g3w-Ob-tXH" firstAttribute="top" secondItem="lPX-ro-QzJ" secondAttribute="bottom" constant="5" id="cB9-uI-mVv"/>
+                <constraint firstItem="9aV-hl-0VX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="egl-Sf-EV2"/>
+                <constraint firstItem="7AY-bg-1IM" firstAttribute="leading" secondItem="w5X-iA-iGV" secondAttribute="leading" id="qix-dM-nuj"/>
+                <constraint firstAttribute="trailing" secondItem="w5X-iA-iGV" secondAttribute="trailing" constant="10" id="s8c-Z0-2ZC"/>
+                <constraint firstItem="7AY-bg-1IM" firstAttribute="top" secondItem="w5X-iA-iGV" secondAttribute="bottom" id="uGC-y5-mzD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deviceGroupLabel" destination="7AY-bg-1IM" id="1HX-LN-aqc"/>
+                <outlet property="deviceModel" destination="9aV-hl-0VX" id="sP3-NC-KzU"/>
+                <outlet property="deviceNumLabel" destination="g3w-Ob-tXH" id="dPb-Sq-otJ"/>
+                <outlet property="deviceStatusLabel" destination="w5X-iA-iGV" id="m5Q-vz-M1w"/>
+            </connections>
+            <point key="canvasLocation" x="-25.600000000000001" y="61.619190404797607"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="set_info_car_header" width="43.5" height="43.5"/>
+    </resources>
+</document>

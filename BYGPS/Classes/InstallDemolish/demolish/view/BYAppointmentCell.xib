@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="BYAppointmentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车主姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYW-ZB-pLI">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="5xO-Fw-uJE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入车主姓名" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hef-Ah-tmI">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="6iG-Rs-NYN"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VYW-ZB-pLI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Bkt-CQ-DC6"/>
+                    <constraint firstAttribute="trailing" secondItem="hef-Ah-tmI" secondAttribute="trailing" constant="20" id="Xft-jB-gfu"/>
+                    <constraint firstItem="VYW-ZB-pLI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hpQ-mK-zKt"/>
+                    <constraint firstItem="hef-Ah-tmI" firstAttribute="centerY" secondItem="VYW-ZB-pLI" secondAttribute="centerY" id="jj5-Xq-I7k"/>
+                    <constraint firstItem="hef-Ah-tmI" firstAttribute="leading" secondItem="VYW-ZB-pLI" secondAttribute="trailing" id="lwG-Wd-aUe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="hef-Ah-tmI" id="W0j-T7-7Jc"/>
+                <outlet property="titleLabel" destination="VYW-ZB-pLI" id="9fU-tc-bKk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

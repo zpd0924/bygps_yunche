@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BYListItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIZ-Fc-1PY">
+                        <rect key="frame" x="0.0" y="0.0" width="35" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="8Uo-YR-EaB"/>
+                        </constraints>
+                        <state key="normal" image="icon_checkbox_no"/>
+                        <state key="selected" image="icon_checkbox_checked"/>
+                        <connections>
+                            <action selector="selectAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="75x-fM-5KF"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4567890678    (013无线)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCd-as-feZ">
+                        <rect key="frame" x="75" y="5" width="281" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hux-md-KAe">
+                        <rect key="frame" x="35" y="0.0" width="35" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="sZs-zS-xgx"/>
+                        </constraints>
+                        <state key="normal" image="list_icon_car_black"/>
+                        <connections>
+                            <action selector="deviceInfoAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eV7-4L-pSe"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arr_drop_right" translatesAutoresizingMaskIntoConstraints="NO" id="aXc-sa-1WZ">
+                        <rect key="frame" x="366" y="16" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="CRb-Ny-QTm"/>
+                            <constraint firstAttribute="width" constant="12" id="pe2-lL-vRU"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Hg-oT-TCl">
+                        <rect key="frame" x="0.0" y="42" width="394" height="1"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Kzd-BQ-yK6"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="粤B45678   bean   启动怠速" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nn9-09-KBp">
+                        <rect key="frame" x="75" y="20" width="143" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hux-md-KAe" firstAttribute="leading" secondItem="BIZ-Fc-1PY" secondAttribute="trailing" id="2p4-Gr-3Ve"/>
+                    <constraint firstAttribute="bottom" secondItem="BIZ-Fc-1PY" secondAttribute="bottom" id="2pg-AR-IIu"/>
+                    <constraint firstItem="Hux-md-KAe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3IO-sK-zdY"/>
+                    <constraint firstItem="Nn9-09-KBp" firstAttribute="top" secondItem="qCd-as-feZ" secondAttribute="bottom" constant="-2" id="4hU-vo-jga"/>
+                    <constraint firstAttribute="trailing" secondItem="9Hg-oT-TCl" secondAttribute="trailing" id="6Jf-B5-qPU"/>
+                    <constraint firstItem="qCd-as-feZ" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BeH-9B-dWb"/>
+                    <constraint firstItem="BIZ-Fc-1PY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BwO-HM-0Uy"/>
+                    <constraint firstItem="BIZ-Fc-1PY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PwS-ZV-8y7"/>
+                    <constraint firstItem="9Hg-oT-TCl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="V7u-zg-FPt"/>
+                    <constraint firstItem="aXc-sa-1WZ" firstAttribute="leading" secondItem="qCd-as-feZ" secondAttribute="trailing" constant="10" id="VLd-NT-xpN"/>
+                    <constraint firstItem="aXc-sa-1WZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aPj-Q0-tEW"/>
+                    <constraint firstAttribute="bottom" secondItem="9Hg-oT-TCl" secondAttribute="bottom" id="b5j-ly-5lc"/>
+                    <constraint firstAttribute="trailing" secondItem="aXc-sa-1WZ" secondAttribute="trailing" constant="16" id="ceM-T0-1P4"/>
+                    <constraint firstItem="qCd-as-feZ" firstAttribute="leading" secondItem="Hux-md-KAe" secondAttribute="trailing" constant="5" id="flD-u5-loq"/>
+                    <constraint firstItem="Nn9-09-KBp" firstAttribute="leading" secondItem="Hux-md-KAe" secondAttribute="trailing" constant="5" id="iUV-7Y-awW"/>
+                    <constraint firstAttribute="bottom" secondItem="Hux-md-KAe" secondAttribute="bottom" id="vmm-Qj-fSM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="carStatusButton" destination="Hux-md-KAe" id="2tB-mj-7Sc"/>
+                <outlet property="selectButton" destination="BIZ-Fc-1PY" id="FxR-2l-XVQ"/>
+                <outlet property="selectButtonContrait_leading" destination="PwS-ZV-8y7" id="IwC-72-Qj9"/>
+                <outlet property="subTitleLabel" destination="Nn9-09-KBp" id="2tT-xE-iAk"/>
+                <outlet property="titleLabel" destination="qCd-as-feZ" id="dTi-di-bdq"/>
+            </connections>
+            <point key="canvasLocation" x="233" y="290"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_arr_drop_right" width="12" height="12"/>
+        <image name="icon_checkbox_checked" width="16" height="16"/>
+        <image name="icon_checkbox_no" width="16" height="16"/>
+        <image name="list_icon_car_black" width="30" height="30"/>
+    </resources>
+</document>

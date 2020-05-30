@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BYDuratrionTypeView">
+            <rect key="frame" x="0.0" y="0.0" width="228" height="196"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qz9-pG-3Ox">
+                    <rect key="frame" x="10" y="10" width="208" height="154"/>
+                    <subviews>
+                        <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWy-n5-NaD" customClass="BYConstDistanceButton">
+                            <rect key="frame" x="0.0" y="82" width="130" height="27"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="kAm-SK-l06"/>
+                                <constraint firstAttribute="height" constant="27" id="kVe-W7-dOc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                            <state key="normal" title="其他" image="icon_radio_nornal">
+                                <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="icon_radio_checked">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="durationTypeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="GEg-4S-UAy"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回传间隔时间选择:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWc-Mu-pgu">
+                            <rect key="frame" x="10" y="0.0" width="127" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnu-Mb-0bY">
+                            <rect key="frame" x="0.0" y="114" width="208" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="回传间隔时间(分钟)" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ber-8i-ROW">
+                                    <rect key="frame" x="30" y="5" width="168" height="30"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Ber-8i-ROW" firstAttribute="top" secondItem="gnu-Mb-0bY" secondAttribute="top" constant="5" id="P9A-Px-b7U"/>
+                                <constraint firstItem="Ber-8i-ROW" firstAttribute="leading" secondItem="gnu-Mb-0bY" secondAttribute="leading" constant="30" id="eiw-B6-T1b"/>
+                                <constraint firstAttribute="trailing" secondItem="Ber-8i-ROW" secondAttribute="trailing" constant="10" id="jmh-do-l1X"/>
+                                <constraint firstAttribute="height" constant="40" id="n45-dV-N3K"/>
+                                <constraint firstAttribute="bottom" secondItem="Ber-8i-ROW" secondAttribute="bottom" constant="5" id="uGT-oL-iwd"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL3-M3-pVv" customClass="BYConstDistanceButton">
+                            <rect key="frame" x="0.0" y="28" width="140" height="27"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="K9R-Sp-b0l"/>
+                                <constraint firstAttribute="width" constant="140" id="q6E-8R-eip"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                            <state key="normal" title="一小时一次" image="icon_radio_nornal">
+                                <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="icon_radio_checked">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="durationTypeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="GNc-hW-IBW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRA-pU-Ugo" customClass="BYConstDistanceButton">
+                            <rect key="frame" x="0.0" y="55" width="140" height="27"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="0Df-4I-x48"/>
+                                <constraint firstAttribute="width" constant="140" id="bmr-1a-dV2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                            <state key="normal" title="一天一次" image="icon_radio_nornal">
+                                <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="icon_radio_checked">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="durationTypeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="X0S-B2-jfb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="gnu-Mb-0bY" secondAttribute="bottom" id="1kr-sG-j1j"/>
+                        <constraint firstItem="cWc-Mu-pgu" firstAttribute="leading" secondItem="Qz9-pG-3Ox" secondAttribute="leading" constant="10" id="3Nc-KE-w6j"/>
+                        <constraint firstItem="cWc-Mu-pgu" firstAttribute="top" secondItem="Qz9-pG-3Ox" secondAttribute="top" id="618-bb-GsK"/>
+                        <constraint firstItem="YWy-n5-NaD" firstAttribute="top" secondItem="ZRA-pU-Ugo" secondAttribute="bottom" id="AXc-bB-HRj"/>
+                        <constraint firstItem="YWy-n5-NaD" firstAttribute="leading" secondItem="Qz9-pG-3Ox" secondAttribute="leading" id="BLu-bb-3Fl"/>
+                        <constraint firstItem="gnu-Mb-0bY" firstAttribute="leading" secondItem="Qz9-pG-3Ox" secondAttribute="leading" id="CeS-LC-8Yx"/>
+                        <constraint firstItem="hL3-M3-pVv" firstAttribute="leading" secondItem="Qz9-pG-3Ox" secondAttribute="leading" id="IzV-UU-abP"/>
+                        <constraint firstItem="ZRA-pU-Ugo" firstAttribute="top" secondItem="hL3-M3-pVv" secondAttribute="bottom" id="RwF-n8-XK9"/>
+                        <constraint firstAttribute="trailing" secondItem="gnu-Mb-0bY" secondAttribute="trailing" id="SOQ-2X-wGM"/>
+                        <constraint firstItem="ZRA-pU-Ugo" firstAttribute="leading" secondItem="Qz9-pG-3Ox" secondAttribute="leading" id="ZNh-NI-Y1R"/>
+                        <constraint firstItem="gnu-Mb-0bY" firstAttribute="top" secondItem="YWy-n5-NaD" secondAttribute="bottom" constant="5" id="t6Z-2t-9hA"/>
+                        <constraint firstItem="hL3-M3-pVv" firstAttribute="top" secondItem="cWc-Mu-pgu" secondAttribute="bottom" constant="10" id="zsU-cD-TFn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Qz9-pG-3Ox" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="28O-MZ-ETY"/>
+                <constraint firstAttribute="trailing" secondItem="Qz9-pG-3Ox" secondAttribute="trailing" constant="10" id="dXu-zY-YMM"/>
+                <constraint firstItem="Qz9-pG-3Ox" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="dyf-GK-I4V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="firstBtn" destination="hL3-M3-pVv" id="aYk-pr-kbC"/>
+                <outlet property="otherBtn" destination="YWy-n5-NaD" id="aXV-Xj-pb0"/>
+                <outlet property="secondBtn" destination="ZRA-pU-Ugo" id="pgo-N8-yPZ"/>
+                <outlet property="textField" destination="Ber-8i-ROW" id="ohf-Lv-1cA"/>
+                <outlet property="textFieldBgViewContraint_H" destination="n45-dV-N3K" id="IIM-5V-nsp"/>
+            </connections>
+            <point key="canvasLocation" x="507" y="447"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_radio_checked" width="17" height="17"/>
+        <image name="icon_radio_nornal" width="17" height="17"/>
+    </resources>
+</document>

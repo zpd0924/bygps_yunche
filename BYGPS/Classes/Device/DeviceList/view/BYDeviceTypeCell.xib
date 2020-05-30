@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="BYDeviceTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJP-ym-Pk2">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.74509803921568629" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="TGW-Oj-wlk"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afM-pF-fhl">
+                        <rect key="frame" x="19" y="11" width="16" height="22"/>
+                        <state key="normal" image="icon_checkbox_no"/>
+                        <state key="selected" image="icon_checkbox_checked"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abf-wb-eih">
+                        <rect key="frame" x="55" y="11.5" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wJP-ym-Pk2" secondAttribute="bottom" id="9tT-En-mCT"/>
+                    <constraint firstItem="Abf-wb-eih" firstAttribute="leading" secondItem="afM-pF-fhl" secondAttribute="trailing" constant="20" id="PnP-HG-0zE"/>
+                    <constraint firstItem="wJP-ym-Pk2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="R0Z-nf-Av4"/>
+                    <constraint firstAttribute="trailing" secondItem="wJP-ym-Pk2" secondAttribute="trailing" id="XcK-2Q-rMS"/>
+                    <constraint firstItem="Abf-wb-eih" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ynx-AM-qFr"/>
+                    <constraint firstItem="afM-pF-fhl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="hkW-Ob-MPa"/>
+                    <constraint firstItem="afM-pF-fhl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uF6-z9-QbL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deviceTypeButton" destination="afM-pF-fhl" id="78n-yv-fKb"/>
+                <outlet property="titleLabel" destination="Abf-wb-eih" id="S58-MG-atf"/>
+            </connections>
+            <point key="canvasLocation" x="159" y="318"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_checkbox_checked" width="16" height="16"/>
+        <image name="icon_checkbox_no" width="16" height="16"/>
+    </resources>
+</document>
